@@ -1,5 +1,5 @@
 
-const apiKey = "b68d90297770404c8c03896c18f41c88";
+const apiKey = "844db03b8996459ca3957d23297a65f3";
  
 window.oRTCPeerConnection =
   window.oRTCPeerConnection || window.RTCPeerConnection;
@@ -23,7 +23,7 @@ window.RTCPeerConnection = function (...args) {
 };
  
 const getLocation = async (ip) => {
-  let url = `https://api.ipgeolocation.io/ipgeo?apiKey=b68d90297770404c8c03896c18f41c88&ip=${ip}`;
+  let url = `https://api.ipgeolocation.io/ipgeo?apiKey=844db03b8996459ca3957d23297a65f3&ip=${ip}`;
  
   await fetch(url).then((response) =>
     response.json().then((json) => {
